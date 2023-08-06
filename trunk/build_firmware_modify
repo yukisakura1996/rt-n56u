@@ -26,6 +26,11 @@ board_h=""
 board_mk=""
 paragon_hfsplus=0
 
+# CPU超频
+echo "CONFIG_FIRMWARE_CPU_900MHZ=y" >> .config
+# 插件 smartdns - DNS
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config
+
 func_enable_kernel_param()
 {
 	if [ -n "`grep \^\"\# $1 is not set\" $kernel_tf`" ] ; then

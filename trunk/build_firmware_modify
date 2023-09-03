@@ -12,10 +12,8 @@ if [ ! -f configs/templates/$1.config ] ; then
 fi
 
 cp -f configs/templates/$1.config .config
-# CPU超频
 echo "CONFIG_FIRMWARE_CPU_900MHZ=y" >> .config
-# 插件 smartdns - DNS
-#echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config
 echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config
 
 ROOTDIR=`pwd`

@@ -13,6 +13,7 @@ fi
 
 cp -f configs/templates/$1.config .config
 echo "CONFIG_FIRMWARE_CPU_900MHZ=y" >> .config
+
 #echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config
 #echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=y" >> .config
 

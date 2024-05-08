@@ -28,6 +28,8 @@ jobs:
         include:
           - build_variant: "mt7621"
             targets: "RM2100"
+          - build_variant: "mt7628"
+            targets: "MI-4C"
           - build_variant: "mt7621-usb"
             targets: "R6220"
     steps:
